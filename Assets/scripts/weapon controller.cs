@@ -33,8 +33,9 @@ public class weaponcontroller : MonoBehaviour
 
     }
 
-    private IEnumerator DestroybulletAfterTime(GameObject bullet, float bulletprefablifetime)
+    private IEnumerator DestroybulletAfterTime(GameObject bullet, float Delay)
     {
-        
+        yield return new WaitForSeconds(Delay);
+        Destroy(bullet);
     }
 }
