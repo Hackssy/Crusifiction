@@ -5,6 +5,21 @@ using UnityEngine;
 
 public class weaponcontroller : MonoBehaviour
 {
+    public Camera PlayerCamera;
+
+    //shooting
+    public bool isShooting, readytoShoot;
+    bool AllowReset = true;
+    public float shootingdelay = 2f;
+
+
+
+
+
+
+
+
+
     public GameObject bulletprefab;
     public Transform BulletSpawn;
     public float bulletVelocity = 30;
