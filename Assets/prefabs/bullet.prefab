@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3774155854930682934}
   - component: {fileID: 4361169523129143756}
   - component: {fileID: 1224624614356062372}
-  - component: {fileID: -3566735032954763239}
+  - component: {fileID: 7397458555397240545}
   m_Layer: 0
   m_Name: bullet
   m_TagString: Untagged
@@ -149,9 +149,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64c7b7458275aae4186a14a9a55a8c14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!96 &-3566735032954763239
-TrailRenderer:
-  serializedVersion: 3
+--- !u!120 &7397458555397240545
+LineRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -191,8 +191,9 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.7
-  m_PreviewTimeScale: 1
+  m_Positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -200,8 +201,8 @@ TrailRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.02507019
-        value: 0.21250916
+        time: 0
+        value: 0.16249657
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -209,8 +210,8 @@ TrailRenderer:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.08635278
-        value: 0.062502265
+        time: 0.02507034
+        value: 0.062497735
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -257,8 +258,7 @@ TrailRenderer:
     textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
-  m_MinVertexDistance: 0.1
   m_MaskInteraction: 0
-  m_Autodestruct: 0
-  m_Emitting: 1
+  m_UseWorldSpace: 1
+  m_Loop: 0
   m_ApplyActiveColorSpace: 1
